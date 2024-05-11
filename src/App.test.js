@@ -1,8 +1,18 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
-
-test('renders learn react link', () => {
+import { render, screen } from "@testing-library/react";
+import App from "./App";
+test('Test First React App', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  let text = screen.getByText(/First react test case/i);
+  const title = screen.getByTitle('ferrari');
+  expect(text).toBeInTheDocument();
+  expect(title).toBeInTheDocument();
+})
+
+test("Testing Input Box", () => {
+  render(<App />)
+  let checkInput = screen.getByRole("textbox");
+  let checkInputPlaceholder = screen.getByPlaceholderText('Enter User Name');
+  expect(checkInput).toBeInTheDocument();
+  expect(checkInputPlaceholder).toBeInTheDocument();
+
 });
