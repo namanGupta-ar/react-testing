@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matched snapshot 1`] = `
+<div>
+  <p>
+    Button
+  </p>
+  <button
+    data-testid="btn-1"
+    onClick={[Function]}
+  >
+    Update Data
+  </button>
+  <button
+    data-testid="btn-2"
+    onClick={[Function]}
+  >
+    Empty Data
+  </button>
+  <h1
+    data-testid="btn-val"
+  >
+    <strike>
+      Empty
+    </strike>
+  </h1>
+  <p>
+    Naman
+  </p>
+</div>
+`;
